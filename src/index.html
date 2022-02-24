@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script type="text/javascript" src='./js/Librairie/jquery-3.3.1.min.js'></script>
+    <script type="text/javascript" src='./js/Librairie/jquery-ui.min.js'></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" type="text/css">
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <div id="canvasObservDiv">
+        <canvas id="canvasObserv" style=" resize:both;"></canvas>
+    </div>
+
+    <div class="leftMenu">
+        <div class="canvasObsDrop"></div>
+        <nav class="seriesList">
+        </nav>
+    </div>
+
+
+    <div class="gradientContainer">
+        <canvas id="gradientCanvas"></canvas>
+        <div class="close" onclick="showGradient(false)">X</div>
+        <div class="control">
+            <div id="gradUp" onclick="update_changeHandeNb(1)">&#9650</div>
+            <div id="gradHandleNb" style="color: white !important; cursor: default;">2</div>
+            <div id="gradDown" onclick="update_changeHandeNb(-1)"> &#9660</div>
+        </div>
+        <div id="handleContainer">
+        </div>
+    </div>
+
+    <div id="slider" class="centerH">
+        <div class="info_imageNb">
+            <svg height="100%" width="100%">
+                <line x1="1%" y1="75%" x2="99%" y2="75%" class="line" /> <!--Main line-->
+                <line x1="1%" y1="50%" x2="1%" y2="100%" class="line" /> <!--Left line-->
+                <line x1="99% " y1="50%" x2="99% " y2="100%" class="line" /> <!--Right line-->
+              </svg>
+            <svg height="100%" width="100%" id="content"></svg>
+
+        </div>
+        <div class="slider-image_holder centerH">
+        </div>
+        <div id="slider-handle" class="ui-draggable ui-draggable-handle"></div>
+    </div>
+
+    <div class="infoImage">
+        <nav>
+            <li id="info_NumeroSerie"></li>
+            <li id="info_NumeroImage"></li>
+        </nav>
+    </div>
+
+    <script type="text/javascript" src='./js/Librairie/jquery-3.3.1.min.js'></script>
+    <script type="text/javascript" src='./js/Librairie/jquery-ui.min.js'></script>
+    <script type="text/javascript" src='./js/Librairie/three.min.js'></script>
+    <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js'></script>
+
+
+    <script type="text/javascript" src='js/Librairie/OrbitControls.js'></script>
+    <script type="text/javascript" src='js/Librairie/Stats.min.js'></script>
+
+    <script type="text/javascript" src='js/variable.js'></script>
+    <script type="text/javascript" src='js/editImage.js'></script>
+    <script type="text/javascript" src='js/scene.js'></script>
+    <script type="text/javascript" src='js/utils.js'></script>
+    <script type="text/javascript" src='js/init.js'></script>
+
+
+</body>
+
+</html>
