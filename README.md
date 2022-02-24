@@ -37,5 +37,10 @@ Gif #1                     |  Gif #2     |  Gif #3
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](Images/1.gif)       | ![](Images/2.gif)   | ![](Images/3.gif) 
 
+ ## Usage
  
+ Place your all the folder that contain the scans in src/ressource/images
+ The folders must be names "SE1", "SE2", "SE3", etc.
+ 
+ To use the src files, place them in a electron projet, electron being the framework used in this project
 
